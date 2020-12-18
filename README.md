@@ -43,8 +43,8 @@ https://www.raspberrypi.org/software/
 
 Post Install:
 
-<code>sudo apt-get update</code><br>
-<code>sudo apt-get upgrade</code>
+* <code>sudo apt-get update</code><br>
+* <code>sudo apt-get upgrade</code>
 
 <h3>3B. Python:</h3>
 

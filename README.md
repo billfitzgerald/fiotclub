@@ -6,9 +6,9 @@ Create a lightweight, standalone testing environment for ad hoc testing of websi
 
 This system is designed to balance two core needs: relative ease of setup paired with thorough, detailed testing. Using this system, a tester has three options that are supported out of the box:
 
-a standard wireshark capture;
-an nmap scan of all connected devices, paired with a timed wireshark capture;
-a proxy capture that dumps encryption keys to a SSLKEYLOGFILE, paired with a wireshark scan that uses the keys to decrypt traffic captures.
+* a standard wireshark capture;
+* an nmap scan of all connected devices, paired with a timed wireshark capture;
+* a proxy capture that dumps encryption keys to a SSLKEYLOGFILE, paired with a wireshark scan that uses the keys to decrypt traffic captures.
 
 Depending on the needs of the test, the tester can choose which approach is best suited for the evaluation.
 

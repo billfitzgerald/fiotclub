@@ -91,16 +91,16 @@ Set up Transparent Mode: https://docs.mitmproxy.org/stable/howto-transparent/
 
 These commands are needed to route all traffic through the proxy. 
 
-<code>sudo sysctl -w net.ipv4.ip_forward=1</code>
-<code>sudo sysctl -w net.ipv6.conf.all.forwarding=1</code>
-<code>sudo sysctl -w net.ipv4.conf.all.send_redirects=0</code>
+* <code>sudo sysctl -w net.ipv4.ip_forward=1</code>
+* <code>sudo sysctl -w net.ipv6.conf.all.forwarding=1</code>
+* <code>sudo sysctl -w net.ipv4.conf.all.send_redirects=0</code>
 
 Use ifconfig to get the name of your wireless card - add the name of the wireless card in WIRELESS_NAME below.
 
-<code>sudo iptables -t nat -A PREROUTING -i WIRELESS_NAME -p tcp --dport 80 -j REDIRECT --to-port 8080</code>
-<code>sudo iptables -t nat -A PREROUTING -i WIRELESS_NAME -p tcp --dport 443 -j REDIRECT --to-port 8080</code>
-<code>sudo ip6tables -t nat -A PREROUTING -i WIRELESS_NAME -p tcp --dport 80 -j REDIRECT --to-port 8080</code>
-<code>sudo ip6tables -t nat -A PREROUTING -i WIRELESS_NAME -p tcp --dport 443 -j REDIRECT --to-port 8080</code>
+* <code>sudo iptables -t nat -A PREROUTING -i WIRELESS_NAME -p tcp --dport 80 -j REDIRECT --to-port 8080</code>
+* <code>sudo iptables -t nat -A PREROUTING -i WIRELESS_NAME -p tcp --dport 443 -j REDIRECT --to-port 8080</code>
+* <code>sudo ip6tables -t nat -A PREROUTING -i WIRELESS_NAME -p tcp --dport 80 -j REDIRECT --to-port 8080</code>
+* <code>sudo ip6tables -t nat -A PREROUTING -i WIRELESS_NAME -p tcp --dport 443 -j REDIRECT --to-port 8080</code>
 
 Create the SSLKEYLOGFILE in your home directory.
 
@@ -112,8 +112,8 @@ Start mitmproxy and dump secrets into SSLKEYLOGFILE.
 
 Possible troubleshooting/refinement:
 
-Set up for "full transparent" https://docs.mitmproxy.org/stable/howto-transparent/#full-transparent-mode-on-linux
-Ignore some traffic: https://docs.mitmproxy.org/stable/howto-ignoredomains/
+* Set up for "full transparent" https://docs.mitmproxy.org/stable/howto-transparent/#full-transparent-mode-on-linux
+* Ignore some traffic: https://docs.mitmproxy.org/stable/howto-ignoredomains/
 
 <h3>3H. Run Wireshark and decrypt traffic:</h3>
 

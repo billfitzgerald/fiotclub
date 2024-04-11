@@ -133,6 +133,4 @@ To start testing, connect all devices to be tested to the wireless access point 
 
 To run a standard Wireshark scan manually, open wireshark, and set wireshark to listen on the wireless adapter. If you are unsure of the name of the wireless adapter, enter <code>ifconfig</code> to see a list of network adapters.
 
-To run an automated nmap scan and wireshark capture of all devices connected to the network, use this testing script: https://gist.github.com/billfitzgerald/02d90ff5dd9f580ac82b6845ed4395db - this script runs an nmap scan, then a tshark capture of network traffic, and then outputs the results into a zip archive.
-
 To set up mitmproxy and decrypt network captures using Wireshark, use the instructions in 3G and 3H, above.
